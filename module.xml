@@ -4,7 +4,7 @@
 	<version>1.0.1</version>
 	<type>setup</type>
 	<category>Call Management</category>
-	<location>release/callwaiting-1.0.tgz</location>
+	<location>release/callwaiting-1.0.1.tgz</location>
 	<info>http://freepbx.org/wiki/CallWaiting</info>
-	<md5sum>8fb4238c9fdb3a5642151c943c8e4feb</md5sum>
+	<md5sum>29cd787743ea815c163cc145f0c0bf8f</md5sum>
 </module>
