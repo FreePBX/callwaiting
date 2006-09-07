@@ -4,7 +4,7 @@
 	<version>1.0.1</version>
 	<type>setup</type>
 	<category>Call Management</category>
-	<location>release/callwaiting-1.0.1.tgz</location>
+	<location>release//2.2/callwaiting-1.0.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
-	<md5sum>aefc32300d4a54e1b5a6f97fab27112d</md5sum>
+	<md5sum>2c244a845a6b7d29c62d52a4715ea623</md5sum>
 </module>
