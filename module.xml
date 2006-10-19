@@ -6,7 +6,8 @@
 	*1.1* First release for 2.2
 	</changelog>
 	<type>setup</type>
-	<category>Provdes a Feature Code</category>
+	<category>Provides a Feature Code</category>
+	<description>Provides an option to turn on/off call waiting</description>
 	<location>release/2.2/callwaiting-1.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
 	<md5sum>f0544cca6ea0f0aef0214206baf12570</md5sum>
