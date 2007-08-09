@@ -1,8 +1,9 @@
 <module>
 	<rawname>callwaiting</rawname>
 	<name>Call Waiting</name>
-	<version>1.1.2</version>
+	<version>1.1.2.1</version>
 	<changelog>
+	*1.1.2.1* bump for rc1
 	*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
 	*1.1.1* Fixed typo Provdes to Provides*
 	*1.1* First release for 2.2
@@ -11,6 +12,5 @@
 	<category>Provides a Feature Code</category>
 	<description>Provides an option to turn on/off call waiting</description>
 	<location>release/2.3/callwaiting-1.1.2.tgz</location>
-	<info>http://aussievoip.com.au/wiki/freePBX-Features</info>
 	<md5sum>eca246dc8289465930a9c049ec995024</md5sum>
 </module>
