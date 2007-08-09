@@ -11,6 +11,6 @@
 	<type>setup</type>
 	<category>Provides a Feature Code</category>
 	<description>Provides an option to turn on/off call waiting</description>
-	<location>release/2.3/callwaiting-1.1.2.tgz</location>
-	<md5sum>eca246dc8289465930a9c049ec995024</md5sum>
+	<location>release/2.3/callwaiting-1.1.2.1.tgz</location>
+	<md5sum>4c2f2ec4b40c94c3d0ec913191c4d1b1</md5sum>
 </module>
