@@ -1,16 +1,17 @@
 <module>
 	<rawname>callwaiting</rawname>
 	<name>Call Waiting</name>
-	<version>1.1.2.1</version>
+	<version>1.1.2.2</version>
 	<changelog>
+	*1.1.2.2* changed categories
 	*1.1.2.1* bump for rc1
 	*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
 	*1.1.1* Fixed typo Provdes to Provides*
 	*1.1* First release for 2.2
 	</changelog>
 	<type>setup</type>
-	<category>Provides a Feature Code</category>
+	<category>Internal Options &amp; Configuration</category>
 	<description>Provides an option to turn on/off call waiting</description>
-	<location>release/2.3/callwaiting-1.1.2.1.tgz</location>
-	<md5sum>4c2f2ec4b40c94c3d0ec913191c4d1b1</md5sum>
+	<location>release/2.3/callwaiting-1.1.2.2.tgz</location>
+	<md5sum>dbc37e546480ab54359fa2bf16c15748</md5sum>
 </module>
