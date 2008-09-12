@@ -9,7 +9,7 @@ $fcc->update();
 unset($fcc);
 
 // Register FeatureCode - Deactivate
-$cwd = _("Call Waiting - Deactivate")
+$cwd = _("Call Waiting - Deactivate");
 $fcc = new featurecode('callwaiting', 'cwoff');
 $fcc->setDescription($cwd);
 $fcc->setDefault('*71');
