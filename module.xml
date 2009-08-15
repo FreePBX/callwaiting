@@ -1,8 +1,11 @@
 <module>
 	<rawname>callwaiting</rawname>
 	<name>Call Waiting</name>
-	<version>2.6.0.0</version>
+	<version>2.6.0.1</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv2+</license>
 	<changelog>
+	*2.6.0.1* Added publisher/lic
 	*2.6.0.0* #3650, #3651, localizations
 	*2.5.0* localization string enclosures
 	*2.4.0* bumped for 2.4
@@ -15,6 +18,6 @@
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>Provides an option to turn on/off call waiting</description>
-	<location>release/2.6/callwaiting-2.6.0.0.tgz</location>
-	<md5sum>581ad64749b5b824348ed6829f18731c</md5sum>
+	<location>release/2.6/callwaiting-2.6.0.1.tgz</location>
+	<md5sum>9e2ca8e793e261b3136f47cd927131c3</md5sum>
 </module>
