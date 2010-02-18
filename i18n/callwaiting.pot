@@ -1,4 +1,4 @@
-#This file is part of FreePBX.
+# This file is part of FreePBX.
 #
 #    FreePBX is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -13,17 +13,14 @@
 #    You should have received a copy of the GNU General Public License
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
-# Copyright (C) 2005 mheydon1973
+# FreePBX language template for callwaiting
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
-# Language template for callwaiting
-# Copyright (C) 2008, 2009 Mikael Carlsson
-#
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:11+0200\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,14 +28,25 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: install.php:4
+#: callwaiting/callwaiting.i18n.php:5 callwaiting/install.php:21
+msgid "Call Waiting"
+msgstr ""
+
+#: callwaiting/callwaiting.i18n.php:7
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+#: callwaiting/callwaiting.i18n.php:11
+msgid "Provides an option to turn on/off call waiting"
+msgstr ""
+
+#: callwaiting/install.php:22
 msgid "Call Waiting - Activate"
 msgstr ""
 
-#: install.php:12
+#: callwaiting/install.php:23
 msgid "Call Waiting - Deactivate"
-msgstr ""
-
-#: module.xml
-msgid "Call Waiting"
 msgstr ""
