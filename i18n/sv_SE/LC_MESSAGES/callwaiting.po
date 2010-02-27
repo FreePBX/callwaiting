@@ -1,13 +1,26 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language for callwaiting
+# Copyright (C) 2010 Mikael Carlsson
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callwaitning\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-09 12:15+0200\n"
+"POT-Creation-Date: 2010-02-27 13:44+0100\n"
 "PO-Revision-Date: 2008-09-09 12:43+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -17,15 +30,20 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: install.php:4
-msgid "Call Waiting - Activate"
-msgstr "Aktivera Samtal väntar"
-
-#: install.php:12
-msgid "Call Waiting - Deactivate"
-msgstr "Avaktivera Samtal väntar"
-
-#: module.xml:3
 msgid "Call Waiting"
 msgstr "Samtal väntar"
 
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid "Provides an option to turn on/off call waiting"
+msgstr "Modulen tillhandahåller funktion för samtal väntar"
+
+msgid "Call Waiting - Activate"
+msgstr "Aktivera Samtal väntar"
+
+msgid "Call Waiting - Deactivate"
+msgstr "Avaktivera Samtal väntar"
