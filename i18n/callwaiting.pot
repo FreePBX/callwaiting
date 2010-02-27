@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 13:44+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,25 +28,20 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: callwaiting/callwaiting.i18n.php:5 callwaiting/install.php:21
 msgid "Call Waiting"
 msgstr ""
 
-#: callwaiting/callwaiting.i18n.php:7
 msgid ""
 "Internal Options \n"
 "&\n"
 " Configuration"
 msgstr ""
 
-#: callwaiting/callwaiting.i18n.php:11
 msgid "Provides an option to turn on/off call waiting"
 msgstr ""
 
-#: callwaiting/install.php:22
 msgid "Call Waiting - Activate"
 msgstr ""
 
-#: callwaiting/install.php:23
 msgid "Call Waiting - Deactivate"
 msgstr ""
