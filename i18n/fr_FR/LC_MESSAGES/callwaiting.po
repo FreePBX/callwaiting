@@ -15,12 +15,11 @@
 #
 # Copyright (C) 2009 Séverine GUTIERREZ, severine@medialsace.fr
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:11+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2009-04-20 11:18+0100\n"
 "Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
 "Language-Team: Français <LL@li.org>\n"
@@ -28,14 +27,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: install.php:4
+msgid "Call Waiting"
+msgstr "Appel en Attente"
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid "Provides an option to turn on/off call waiting"
+msgstr ""
+
 msgid "Call Waiting - Activate"
 msgstr "Appels en Attente - Activer"
 
-#: install.php:12
 msgid "Call Waiting - Deactivate"
 msgstr "Appels en Attente - Désactiver"
-
-#: module.xml
-msgid "Call Waiting"
-msgstr "Appel en Attente"

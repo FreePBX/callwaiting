@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-17 11:11+0200\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2009-02-01 15:12+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -18,15 +18,20 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: install.php:4
-msgid "Call Waiting - Activate"
-msgstr "呼叫等待 - 激活"
-
-#: install.php:12
-msgid "Call Waiting - Deactivate"
-msgstr "呼叫等待 - 关闭"
-
-#: module.xml
 msgid "Call Waiting"
 msgstr "呼叫等待"
 
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid "Provides an option to turn on/off call waiting"
+msgstr ""
+
+msgid "Call Waiting - Activate"
+msgstr "呼叫等待 - 激活"
+
+msgid "Call Waiting - Deactivate"
+msgstr "呼叫等待 - 关闭"
