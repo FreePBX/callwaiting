@@ -28,4 +28,15 @@ if ($astman) {
 	fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
 
+// De-register FeatureCode - Activate
+$fcc = new featurecode('callwaiting', 'cwon');
+$fcc->delete();
+unset($fcc);
+
+// De-register FeatureCode - Deactivate
+$fcc = new featurecode('callwaiting', 'cwoff');
+$fcc->delete();
+unset($fcc);
+
+
 ?>
