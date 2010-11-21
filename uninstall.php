@@ -21,22 +21,12 @@
 // from a function...?
 global $astman;
 
+// Don't bother uninstalling feature codes, now module_uninstall does it
+
 // remove all Call Waiting options in effect on extensions
 if ($astman) {
 	$astman->database_deltree('CW');
 } else {
 	fatal("Cannot connect to Asterisk Manager with ".$amp_conf["AMPMGRUSER"]."/".$amp_conf["AMPMGRPASS"]);
 }
-
-// De-register FeatureCode - Activate
-$fcc = new featurecode('callwaiting', 'cwon');
-$fcc->delete();
-unset($fcc);
-
-// De-register FeatureCode - Deactivate
-$fcc = new featurecode('callwaiting', 'cwoff');
-$fcc->delete();
-unset($fcc);
-
-
 ?>
