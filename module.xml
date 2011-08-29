@@ -19,8 +19,7 @@
 	*1.1.1* Fixed typo Provdes to Provides*
 	*1.1* First release for 2.2
 	</changelog>
-	<type>setup</type>
-	<category>Internal Options &amp; Configuration</category>
+	<category>Call Flow</category>
 	<description>Provides an option to turn on/off call waiting</description>
 	<location>release/2.9/callwaiting-2.9.0.0.tgz</location>
 	<md5sum>a36497dc8c30f053a821ab35c0c1d269</md5sum>
