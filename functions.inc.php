@@ -75,4 +75,27 @@ function callwaiting_cwoff($c) {
 	$ext->add($id, $c, 'hook_1', new ext_playback('call-waiting&de-activated')); // $cmd,n,Playback(...)
 	$ext->add($id, $c, '', new ext_macro('hangupcall')); // $cmd,n,Macro(user-callerid)
 }
+
+function callwaiting_set($extension, $state = '') {
+	global $astman;
+
+	if ($state != "") {
+        	$ret = $astman->database_put('CW',$extension,$state);
+        } else {
+                $ret = $astman->database_del('CW',$extension);
+        	$ret = $ret['result'];
+	}
+	
+	return $ret;
+}
+
+function callwaiting_get($extension = '') {
+	global $astman;
+
+	if ($extension) {
+		return $astman->database_get('CW', $extension);
+	} else {
+		return $astman->database_show('CW');
+	}
+}
 ?>
