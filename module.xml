@@ -26,4 +26,4 @@
 	<description>Provides an option to turn on/off call waiting</description>
 	<location>release/2.11/callwaiting-2.11.0.0.tgz</location>
 	<md5sum>925bb6e2b91e3a1b189204d2ed6260f7</md5sum>
-</module>
+<supported><version>2.11</version></supported></module>
