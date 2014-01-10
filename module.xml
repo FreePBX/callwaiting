@@ -2,6 +2,8 @@
 	<rawname>callwaiting</rawname>
 	<repo>standard</repo>
 	<name>Call Waiting</name>
+	<description>Provides an option to turn on/off call waiting</description>
+	<category>Applications</category>
 	<version>2.11.0.2</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
@@ -24,8 +26,9 @@
 	*1.1.1* Fixed typo Provdes to Provides*
 	*1.1* First release for 2.2
 	</changelog>
-	<category>Applications</category>
-	<description>Provides an option to turn on/off call waiting</description>
+	<supported>
+		<version>2.10</version>
+	</supported>
 	<location>release/2.11/callwaiting-2.11.0.2.tgz</location>
 	<md5sum>053d7d9092508127708bae2f8ecff8e3</md5sum>
 </module>
