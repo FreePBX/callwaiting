@@ -1,11 +1,11 @@
 <module>
-	<rawname>callwaiting</rawname>
-	<repo>standard</repo>
-	<name>Call Waiting</name>
-	<version>2.11.0.2</version>
-	<publisher>FreePBX</publisher>
-	<license>GPLv2+</license>
-	<changelog>
+  <rawname>callwaiting</rawname>
+  <repo>standard</repo>
+  <name>Call Waiting</name>
+  <version>2.11.0.2</version>
+  <publisher>FreePBX</publisher>
+  <license>GPLv2+</license>
+  <changelog>
 	*2.11.0.2 * Bump version to try and force it to install
 		*2.11.0.1* #6857
 		*2.11.0.0* bump version
@@ -24,8 +24,11 @@
 	*1.1.1* Fixed typo Provdes to Provides*
 	*1.1* First release for 2.2
 	</changelog>
-	<category>Applications</category>
-	<description>Provides an option to turn on/off call waiting</description>
-	<location>release/2.11/callwaiting-2.11.0.2.tgz</location>
-	<md5sum>053d7d9092508127708bae2f8ecff8e3</md5sum>
+  <category>Applications</category>
+  <description>Provides an option to turn on/off call waiting</description>
+  <location>release/2.11/callwaiting-2.11.0.2.tgz</location>
+  <md5sum>053d7d9092508127708bae2f8ecff8e3</md5sum>
+  <supported>
+    <version>2.10</version>
+  </supported>
 </module>
