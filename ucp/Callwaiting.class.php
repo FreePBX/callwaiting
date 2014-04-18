@@ -33,11 +33,67 @@ class Callwaiting extends Modules{
 	}
 
 	public function getSettingsDisplay($ext) {
-		$out[] = array(
-			"title" => _('Call Waiting'),
-			"content" => 'Ok Content!',
-			"size" => 6
+		$displayvars = array(
+			"enabled" => $this->UCP->FreePBX->Callwaiting->getStatusByExtension($ext)
+		);
+		$out = array(
+			array(
+				"title" => _('Call Waiting'),
+				"content" => $this->load_view(__DIR__.'/views/settings.php',$displayvars).$this->LoadScripts(),
+				"size" => 6
+			)
 		);
 		return $out;
+	}
+
+	/**
+	 * Determine what commands are allowed
+	 *
+	 * Used by Ajax Class to determine what commands are allowed by this class
+	 *
+	 * @param string $command The command something is trying to perform
+	 * @param string $settings The Settings being passed through $_POST or $_PUT
+	 * @return bool True if pass
+	 */
+	function ajaxRequest($command, $settings) {
+		if(!$this->_checkExtension($_POST['ext'])) {
+			return false;
+		}
+		switch($command) {
+			case 'enable':
+				return true;
+			default:
+				return false;
+			break;
+		}
+	}
+
+	/**
+	 * The Handler for all ajax events releated to this class
+	 *
+	 * Used by Ajax Class to process commands
+	 *
+	 * @return mixed Output if success, otherwise false will generate a 500 error serverside
+	 */
+	function ajaxHandler() {
+		$return = array("status" => false, "message" => "");
+		switch($_REQUEST['command']) {
+			case 'enable':
+				if($_POST['enable'] == 'true') {
+					$this->UCP->FreePBX->Callwaiting->setStatusByExtension($_POST['ext'],"ENABLED");
+				} else {
+					$this->UCP->FreePBX->Callwaiting->setStatusByExtension($_POST['ext']);
+				}
+				return array("status" => true, "alert" => "success", "message" => _('Call Waiting Has Been Updated!'));
+				break;
+			default:
+				return $return;
+			break;
+		}
+	}
+
+	private function _checkExtension($extension) {
+		$user = $this->UCP->User->getUser();
+		return in_array($extension,$user['assigned']);
 	}
 }
