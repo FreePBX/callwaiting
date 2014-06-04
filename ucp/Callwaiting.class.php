@@ -39,7 +39,7 @@ class Callwaiting extends Modules{
 		$out = array(
 			array(
 				"title" => _('Call Waiting'),
-				"content" => $this->load_view(__DIR__.'/views/settings.php',$displayvars).$this->LoadScripts(),
+				"content" => $this->load_view(__DIR__.'/views/settings.php',$displayvars),
 				"size" => 6
 			)
 		);
