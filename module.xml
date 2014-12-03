@@ -4,16 +4,19 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>2.11.0.4</version>
+	<version>12.0.3</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*12.0.3* UCP work
+		*12.0.2* Restructure Parts of UCP
+		*12.0.1* UCP Module Addition
 		*2.11.0.4* Generate License file
 		*2.11.0.2 * Bump version to try and force it to install
 		*2.11.0.1* #6857
 		*2.11.0.0* bump version
-		*2.10.0.1* #5478 
+		*2.10.0.1* #5478
 		*2.10.0.0* new version changes
 		*2.9.0.0* #4532, #4651
 		*2.8.0.0* published 2.8 version
@@ -28,7 +31,7 @@
 		*1.1* First release for 2.2
 	</changelog>
 	<supported>
-		<version>2.10</version>
+		<version>12.0</version>
 	</supported>
 	<location>release/2.11/callwaiting-2.11.0.2.tgz</location>
 	<md5sum>053d7d9092508127708bae2f8ecff8e3</md5sum>
