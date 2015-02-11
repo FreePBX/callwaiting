@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callwaitning\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:33-0500\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,20 +30,35 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
+#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:12
+msgid ""
+"A service whereby someone making a telephone call is notified of an incoming "
+"call and is able to place the first call on hold while answering the second."
+msgstr ""
+
+#: /usr/src/freepbx/callwaiting/install.php:9
+#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "Samtal väntar"
 
-msgid "Applications"
-msgstr ""
-
-msgid "Provides an option to turn on/off call waiting"
-msgstr "Modulen tillhandahåller funktion för samtal väntar"
-
+#: /usr/src/freepbx/callwaiting/install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Aktivera Samtal väntar"
 
+#: /usr/src/freepbx/callwaiting/install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Avaktivera Samtal väntar"
+
+#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:87
+msgid "Call Waiting Has Been Updated!"
+msgstr ""
+
+#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:4
+msgid "Enable"
+msgstr ""
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr "Modulen tillhandahåller funktion för samtal väntar"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"
