@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:33-0500\n"
+"POT-Creation-Date: 2015-02-20 19:05-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,29 +17,41 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:12
+#: ucp/views/settings.php:12
 msgid ""
 "A service whereby someone making a telephone call is notified of an incoming "
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/install.php:9
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4
+#: callwaiting.i18n.php:9
+msgid "Applications"
+msgstr ""
+
+#: callwaiting.i18n.php:3
+#: callwaiting.i18n.php:7
+#: install.php:9
+#: ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:4
+#: ucp/views/settings.php:4
 msgid "Enable"
+msgstr ""
+
+#: callwaiting.i18n.php:5
+#: callwaiting.i18n.php:11
+msgid "Provides an option to turn on/off call waiting"
 msgstr ""

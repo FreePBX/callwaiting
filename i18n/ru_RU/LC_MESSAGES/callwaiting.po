@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:33-0500\n"
+"POT-Creation-Date: 2015-02-20 19:05-0500\n"
 "PO-Revision-Date: 2012-11-01 16:31+0400\n"
 "Last-Translator: Postmet <ceo@postmet.com>\n"
 "Language-Team: Russian\n"
@@ -29,36 +29,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:12
+#: ucp/views/settings.php:12
 msgid ""
 "A service whereby someone making a telephone call is notified of an incoming "
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/install.php:9
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 callwaiting.i18n.php:9
+msgid "Applications"
+msgstr "Приложения"
+
+#: callwaiting.i18n.php:3 callwaiting.i18n.php:7 install.php:9
+#: ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "Вторая линия (ожидание вызова)"
 
-#: /usr/src/freepbx/callwaiting/install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Разрешить вторую линию"
 
-#: /usr/src/freepbx/callwaiting/install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Запретить вторую линию"
 
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:4
+#: ucp/views/settings.php:4
 msgid "Enable"
 msgstr ""
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr ""
-#~ "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
+#: callwaiting.i18n.php:5 callwaiting.i18n.php:11
+msgid "Provides an option to turn on/off call waiting"
+msgstr "Дает возможность подключать/отключать вторую линию (ожидание вызова)"

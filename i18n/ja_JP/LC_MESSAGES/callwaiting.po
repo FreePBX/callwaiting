@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 17:33-0500\n"
+"POT-Creation-Date: 2015-02-20 19:05-0500\n"
 "PO-Revision-Date: 2014-02-17 06:03+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callwaiting/ja/"
@@ -49,35 +49,37 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:12
+#: ucp/views/settings.php:12
 msgid ""
 "A service whereby someone making a telephone call is notified of an incoming "
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/install.php:9
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 callwaiting.i18n.php:9
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: callwaiting.i18n.php:3 callwaiting.i18n.php:7 install.php:9
+#: ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "コールウェイティング"
 
-#: /usr/src/freepbx/callwaiting/install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "割り込み通話 - アクティベート"
 
-#: /usr/src/freepbx/callwaiting/install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "割り込み通話 - 非アクティベート"
 
-#: /usr/src/freepbx/callwaiting/ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr ""
 
-#: /usr/src/freepbx/callwaiting/ucp/views/settings.php:4
+#: ucp/views/settings.php:4
 msgid "Enable"
 msgstr ""
 
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr "割り込み通話のon/offオプション"
+#: callwaiting.i18n.php:5 callwaiting.i18n.php:11
+msgid "Provides an option to turn on/off call waiting"
+msgstr "割り込み通話のon/offオプション"
