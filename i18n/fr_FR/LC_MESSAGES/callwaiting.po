@@ -20,22 +20,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:05-0500\n"
-"PO-Revision-Date: 2009-04-20 11:18+0100\n"
-"Last-Translator: Séverine GUTIERREZ <severine@medialsace.fr>\n"
-"Language-Team: Français <LL@li.org>\n"
+"PO-Revision-Date: 2015-04-22 23:36+0200\n"
+"Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/callwaiting/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: ucp/views/settings.php:12
 msgid ""
 "A service whereby someone making a telephone call is notified of an incoming "
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
+"Un service qui permet à quelqu'un de faire un appel téléphonique est averti "
+"d'un appel entrant et est capable de mettre le premier appel en attente "
+"pendant qu'il répond au deuxième."
 
 #: callwaiting.i18n.php:4 callwaiting.i18n.php:9
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: callwaiting.i18n.php:3 callwaiting.i18n.php:7 install.php:9
 #: ucp/Callwaiting.class.php:41
@@ -52,12 +59,12 @@ msgstr "Appels en Attente - Désactiver"
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
-msgstr ""
+msgstr "L'appel en attente a été modifié !"
 
 #: ucp/views/settings.php:4
 msgid "Enable"
-msgstr ""
+msgstr "Activer"
 
 #: callwaiting.i18n.php:5 callwaiting.i18n.php:11
 msgid "Provides an option to turn on/off call waiting"
-msgstr ""
+msgstr "Fournit une option pour activer / désactiver l'appel en attente"
