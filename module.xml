@@ -4,11 +4,12 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>12.0.3</version>
+	<version>13.0.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.1* FREEPBX-9564 UCP goes offline after changing settings
 		*12.0.3* UCP work
 		*12.0.2* Restructure Parts of UCP
 		*12.0.1* UCP Module Addition
@@ -31,7 +32,7 @@
 		*1.1* First release for 2.2
 	</changelog>
 	<supported>
-		<version>12.0</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/callwaiting-2.11.0.2.tgz</location>
 	<md5sum>053d7d9092508127708bae2f8ecff8e3</md5sum>
