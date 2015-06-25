@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:05-0500\n"
+"POT-Creation-Date: 2015-06-25 18:27-0400\n"
 "PO-Revision-Date: 2014-02-17 06:03+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callwaiting/ja/"
@@ -55,12 +55,7 @@ msgid ""
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
 
-#: callwaiting.i18n.php:4 callwaiting.i18n.php:9
-msgid "Applications"
-msgstr "アプリケーション"
-
-#: callwaiting.i18n.php:3 callwaiting.i18n.php:7 install.php:9
-#: ucp/Callwaiting.class.php:41
+#: install.php:9 ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "コールウェイティング"
 
@@ -80,6 +75,8 @@ msgstr ""
 msgid "Enable"
 msgstr ""
 
-#: callwaiting.i18n.php:5 callwaiting.i18n.php:11
-msgid "Provides an option to turn on/off call waiting"
-msgstr "割り込み通話のon/offオプション"
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr "割り込み通話のon/offオプション"
