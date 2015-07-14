@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-20 19:05-0500\n"
-"PO-Revision-Date: 2015-03-11 21:36+0200\n"
+"PO-Revision-Date: 2015-07-14 14:25+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian "
 "<http://weblate.freepbx.org/projects/freepbx/callwaiting/bg_BG/>\n"
@@ -50,7 +50,7 @@ msgstr "Чакащо Повикване - Изключи"
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
-msgstr "Чакащо Повикване е Актуализирано!"
+msgstr "Чакащото Повикване е Актуализирано!"
 
 #: ucp/views/settings.php:4
 msgid "Enable"
