@@ -31,6 +31,13 @@
 		*1.1.2* changed ${CALLERID(number)} to ${AMPUSER} to accomodate CID number masquerading
 		*1.1* First release for 2.2
 	</changelog>
+	<hooks>
+		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
+			<method callingMethod="getHeaders" class="Callwaiting">bulkhandlerGetHeaders</method>
+			<method callingMethod="export" class="Callwaiting">bulkhandlerExport</method>
+			<method callingMethod="import" class="Callwaiting">bulkhandlerImport</method>
+		</bulkhandler>
+	</hooks>
 	<supported>
 		<version>13.0</version>
 	</supported>
