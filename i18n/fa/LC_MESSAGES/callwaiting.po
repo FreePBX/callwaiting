@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-25 18:27-0400\n"
+"POT-Creation-Date: 2016-01-26 16:48-0800\n"
 "PO-Revision-Date: 2015-10-10 14:53+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian "
-"<http://weblate.freepbx.org/projects/freepbx/callwaiting/fa/>\n"
-"Language: fa\n"
+"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
+"callwaiting/fa/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -29,7 +29,11 @@ msgstr ""
 "سرویسی که وقتی تماس گرفته میشود متوجه شده و تماس اول را منتظر گذاشته و به "
 "تماس دوم پاسخ میدهد."
 
-#: install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:6
+msgid "Applications"
+msgstr ""
+
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "انتظار تماس"
 
@@ -41,6 +45,10 @@ msgstr "انتظار تماس - فعال سازی"
 msgid "Call Waiting - Deactivate"
 msgstr "انتظار تماس - غیرفعال سازی"
 
+#: Callwaiting.class.php:57 Callwaiting.class.php:58
+msgid "Call Waiting Enabled"
+msgstr ""
+
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr "انتظار تماس به روز شده است!"
@@ -48,3 +56,7 @@ msgstr "انتظار تماس به روز شده است!"
 #: ucp/views/settings.php:4
 msgid "Enable"
 msgstr "فعال"
+
+#: callwaiting.i18n.php:8
+msgid "Provides an option to turn on/off call waiting"
+msgstr ""

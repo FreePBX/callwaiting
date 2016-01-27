@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-25 18:27-0400\n"
+"POT-Creation-Date: 2016-01-26 16:48-0800\n"
 "PO-Revision-Date: 2015-03-11 21:36+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
@@ -31,7 +31,11 @@ msgstr ""
 "входящо обаждане и ще имате възможност да задържите първия разговор за да "
 "отговорите на втория."
 
-#: install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "Чакащо Повикване"
 
@@ -43,6 +47,10 @@ msgstr "Чакащо Повикване - Включи"
 msgid "Call Waiting - Deactivate"
 msgstr "Чакащо Повикване - Изключи"
 
+#: Callwaiting.class.php:57 Callwaiting.class.php:58
+msgid "Call Waiting Enabled"
+msgstr ""
+
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr "Чакащо Повикване е Актуализирано!"
@@ -51,8 +59,6 @@ msgstr "Чакащо Повикване е Актуализирано!"
 msgid "Enable"
 msgstr "Разреши"
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr "Предоставя възможност за включване и изключване на чакащо повикване"
+#: callwaiting.i18n.php:8
+msgid "Provides an option to turn on/off call waiting"
+msgstr "Предоставя възможност за включване и изключване на чакащо повикване"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-25 18:27-0400\n"
+"POT-Creation-Date: 2016-01-26 16:48-0800\n"
 "PO-Revision-Date: 2015-04-25 00:14+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -42,7 +42,11 @@ msgstr ""
 "Сервис, благодаря которому говорящий получает уведомление о входящем звонке "
 "и может перевести первый вызов на удержание, пока отвечает на второй вызов."
 
-#: install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
 msgid "Call Waiting"
 msgstr "Вторая линия (ожидание вызова)"
 
@@ -54,6 +58,10 @@ msgstr "Разрешить вторую линию"
 msgid "Call Waiting - Deactivate"
 msgstr "Запретить вторую линию"
 
+#: Callwaiting.class.php:57 Callwaiting.class.php:58
+msgid "Call Waiting Enabled"
+msgstr ""
+
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr "Ожидание вызова обновлено!"
@@ -62,9 +70,6 @@ msgstr "Ожидание вызова обновлено!"
 msgid "Enable"
 msgstr "Включить"
 
-#~ msgid "Applications"
-#~ msgstr "Приложения"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr ""
-#~ "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
+#: callwaiting.i18n.php:8
+msgid "Provides an option to turn on/off call waiting"
+msgstr "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
