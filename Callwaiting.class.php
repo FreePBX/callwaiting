@@ -80,7 +80,9 @@ class Callwaiting implements BMO {
 		switch ($type) {
 			case 'extensions':
 				foreach ($rawData as $data) {
-					$this->setStatusByExtension($data['extension'], $data['callwaiting_enable']);
+					if(isset($data['callwaiting_enable'])) {
+						$this->setStatusByExtension($data['extension'], $data['callwaiting_enable']);
+					}
 				}
 			break;
 		}
