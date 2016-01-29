@@ -55,7 +55,7 @@ class Callwaiting implements BMO {
 				$headers = array(
 					'callwaiting_enable' => array(
 						'identifier' => _('Call Waiting Enabled'),
-						'description' => _('Call Waiting Enabled'),
+						'description' => _('Call Waiting Enabled: ENABLED to enable, blank to disable'),
 					),
 				);
 				return $headers;
@@ -81,7 +81,9 @@ class Callwaiting implements BMO {
 			case 'extensions':
 				foreach ($rawData as $data) {
 					if(isset($data['callwaiting_enable'])) {
-						$this->setStatusByExtension($data['extension'], $data['callwaiting_enable']);
+						$curVal = trim($data['callwaiting_enable']);
+						$curVal = empty($curVal)?'':'ENABLED';
+						$this->setStatusByExtension($data['extension'], $curVal);
 					}
 				}
 			break;
