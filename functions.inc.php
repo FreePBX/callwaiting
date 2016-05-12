@@ -6,9 +6,9 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 function callwaiting_get_config($engine) {
 	$modulename = 'callwaiting';
-	
+
 	// This generates the dialplan
-	global $ext;  
+	global $ext;
 	switch($engine) {
 		case "asterisk":
 			if (is_array($featurelist = featurecodes_getModuleFeatures($modulename))) {
@@ -19,13 +19,13 @@ function callwaiting_get_config($engine) {
 						$fcc = new featurecode($modulename, $featurename);
 						$fc = $fcc->getCodeActive();
 						unset($fcc);
-						
+
 						if ($fc != '')
 							$fname($fc);
 					} else {
 						$ext->add('from-internal-additional', 'debug', '', new ext_noop($modulename.": No func $fname"));
 						var_dump($item);
-					}	
+					}
 				}
 			}
 		break;
@@ -39,10 +39,13 @@ function callwaiting_cwon($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Call Waiting: ON")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)','${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
-	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
-	$ext->add($id, $c, '', new ext_setvar('DB(CW/${AMPUSER})', 'ENABLED')); 
+	$ext->add($id, $c, '', new ext_setvar('DB(CW/${AMPUSER})', 'ENABLED'));
 	$ext->add($id, $c, 'hook_1', new ext_playback('call-waiting&activated')); // $cmd,n,Playback(...)
 	$ext->add($id, $c, '', new ext_macro('hangupcall')); // $cmd,n,Macro(user-callerid)
 }
@@ -55,10 +58,13 @@ function callwaiting_cwoff($c) {
 
 	$ext->addInclude('from-internal-additional', $id); // Add the include from from-internal
 
+	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name-charset,i)','utf8'));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(name,i)',_("Call Waiting: OFF")));
+	$ext->add($id, $c, '', new ext_set('CONNECTEDLINE(num,i)','${AMPUSER}'));
 	$ext->add($id, $c, '', new ext_answer('')); // $cmd,1,Answer
 	$ext->add($id, $c, '', new ext_wait('1')); // $cmd,n,Wait(1)
-	$ext->add($id, $c, '', new ext_macro('user-callerid')); // $cmd,n,Macro(user-callerid)
-	$ext->add($id, $c, '', new ext_dbdel('CW/${AMPUSER}')); 
+	$ext->add($id, $c, '', new ext_dbdel('CW/${AMPUSER}'));
 	$ext->add($id, $c, 'hook_1', new ext_playback('call-waiting&de-activated')); // $cmd,n,Playback(...)
 	$ext->add($id, $c, '', new ext_macro('hangupcall')); // $cmd,n,Macro(user-callerid)
 }
@@ -72,7 +78,7 @@ function callwaiting_set($extension, $state = '') {
                 $ret = $astman->database_del('CW',$extension);
         	$ret = $ret['result'];
 	}
-	
+
 	return $ret;
 }
 
