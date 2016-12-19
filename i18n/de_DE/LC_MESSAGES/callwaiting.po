@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-02-03 16:02-0800\n"
-"PO-Revision-Date: 2016-12-19 12:52+0200\n"
+"PO-Revision-Date: 2016-12-19 13:13+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/callwaiting/de_DE/>\n"
@@ -26,6 +26,9 @@ msgid ""
 "A service whereby someone making a telephone call is notified of an incoming "
 "call and is able to place the first call on hold while answering the second."
 msgstr ""
+"Bietet die Möglichkeit während eines Telefonates, einen weiteren eingehenden "
+"Anruf signalisiert zu bekommen. Das Telefonat kann dann auf halten gelegt "
+"werden um den zweiten anzunehmen."
 
 #: callwaiting.i18n.php:6
 msgid "Applications"
@@ -49,16 +52,16 @@ msgstr "Anklopfen aktiviert"
 
 #: Callwaiting.class.php:58
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
-msgstr ""
+msgstr "Anklopfen aktiviert: ENABLED aktiviert, leer deaktiviert"
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
-msgstr ""
+msgstr "Anklopfen wurde aktualisiert!"
 
 #: ucp/views/settings.php:4
 msgid "Enable"
-msgstr ""
+msgstr "Aktivieren"
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
-msgstr ""
+msgstr "Bietet die Möglichkeit zum Ein- / Ausschalten des Anklopfens."
