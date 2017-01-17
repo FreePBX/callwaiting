@@ -10,7 +10,6 @@ var CallwaitingC = UCPMC.extend({
 		return exts;
 	},
 	poll: function(data) {
-		console.log(data);
 		var self = this;
 		var change = function(extension, state, el) {
 			if(!el.length) {
