@@ -38,7 +38,7 @@ class Callwaiting extends Modules{
 			if(!$this->_checkExtension($ext)) {
 				continue;
 			}
-			$states[$ext] = $this->UCP->FreePBX->Callwaiting->getStatusByExtension($ext);
+			$states[$ext] = $this->UCP->FreePBX->Callwaiting->getStatusByExtension($ext) == "ENABLED" ? true : false;
 		}
 
 		return array("states" => $states);

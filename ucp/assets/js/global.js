@@ -11,54 +11,44 @@ var CallwaitingC = UCPMC.extend({
 	},
 	poll: function(data) {
 		var self = this;
-		var change = function(extension, state, el) {
-			if(!el.length) {
-				return;
+		$.each(data.states, function(ext,state) {
+			if(typeof self.stopPropagation[ext] !== "undefined" && self.stopPropagation[ext]) {
+				return true;
 			}
-			var current = el.is(":checked");
-			if(state && !current) {
+			var widget = $(".grid-stack-item[data-rawname=callwaiting][data-widget_type_id='"+ext+"']:visible input[name='cwenable']"),
+				sidebar = $(".widget-extra-menu[data-module='callwaiting'][data-widget_type_id='"+ext+"']:visible input[name='cwenable']"),
+				sstate = state ? "on" : "off";
+			if(widget.length && (widget.is(":checked") !== state)) {
 				self.stopPropagation[extension] = true;
-				el.bootstrapToggle('on');
+				widget.bootstrapToggle(sstate);
 				self.stopPropagation[extension] = false;
-			} else if(!state && current) {
+			} else if(sidebar.length && (sidebar.is(":checked") !== state)) {
 				self.stopPropagation[extension] = true;
-				el.bootstrapToggle('off');
+				sidebar.bootstrapToggle(sstate);
 				self.stopPropagation[extension] = false;
 			}
-		};
-		$.each(data.states, function(ext,v) {
-			var state = (v == "ENABLED") ? true : false;
-
-			change(ext, state, $(".grid-stack-item[data-rawname=callwaiting][data-widget_type_id='"+ext+"'] input[name='cwenable']"));
-			change(ext, state, $(".widget-extra-menu[data-module='callwaiting'][data-widget_type_id='"+ext+"'] input[name='cwenable']"));
 		});
 	},
 	displayWidget: function(widget_id,dashboard_id) {
 		var self = this;
-		$("div[data-id='"+widget_id+"'] .widget-content input[name='cwenable']").change(function(e) {
-			var extension = $("div[data-id='"+widget_id+"']").data("widget_type_id"),
-					checked = $(this).is(':checked');
-			if(typeof self.stopPropagation[extension] !== "undefined" && self.stopPropagation[extension]) {
-				return;
+		$(".grid-stack-item[data-id='"+widget_id+"'][data-rawname=callwaiting] .widget-content input[name='cwenable']").change(function() {
+			var extension = $(".grid-stack-item[data-id='"+widget_id+"'][data-rawname=callwaiting]").data("widget_type_id"),
+				el = $(".widget-extra-menu[data-module='callwaiting'][data-widget_type_id='"+extension+"']:visible input[name='cwenable']"),
+				checked = $(this).is(':checked'),
+				name = $(this).prop('name');
+			if(el.length && el.is(":checked") !== checked) {
+				var state = checked ? "on" : "off";
+				el.bootstrapToggle(state);
 			}
-			self.saveSettings(extension, {enable: checked}, function(data) {
-				var el = $(".widget-extra-menu[data-module='callwaiting'][data-widget_type_id='"+extension+"'] input[name='cwenable']");
-				if(el.length) {
-					if(checked) {
-						el.bootstrapToggle('on');
-					} else {
-						el.bootstrapToggle('off');
-					}
-				}
-			});
+			self.saveSettings(extension, {enable: checked});
 		});
 	},
 	saveSettings: function(extension, data, callback) {
 		var self = this;
-		self.stopPropagation[extension] = true;
 		data.ext = extension;
 		data.module = "Callwaiting";
 		data.command = "enable";
+		this.stopPropagation[extension] = true;
 		$.post( UCP.ajaxUrl, data, callback).always(function() {
 			self.stopPropagation[extension] = false;
 		});
@@ -67,23 +57,18 @@ var CallwaitingC = UCPMC.extend({
 		var self = this;
 		$(".widget-extra-menu[data-module=callwaiting] input[name='cwenable']").change(function(e) {
 			var extension = widget_type_id,
-					checked = $(this).is(':checked');
-			if(typeof self.stopPropagation[extension] !== "undefined" && self.stopPropagation[extension]) {
-				return;
-			}
-			self.saveSettings(extension, {enable: $(this).is(':checked')}, function(data){
-				if (data.status) {
-					//update elements on the current dashboard if there are any
-					var el = $(".grid-stack-item[data-rawname='callwaiting'][data-widget_type_id='"+extension+"'] input[name='cwenable']");
-					if(el.length) {
-						if(checked) {
-							el.bootstrapToggle('on');
-						} else {
-							el.bootstrapToggle('off');
-						}
-					}
+				checked = $(this).is(':checked'),
+				name = $(this).prop('name'),
+				el = $(".grid-stack-item[data-rawname=callwaiting][data-widget_type_id='"+extension+"']:visible input[name='cwenable']");
+
+			if(el.length) {
+				if(el.is(":checked") !== checked) {
+					var state = checked ? "on" : "off";
+					el.bootstrapToggle(state);
 				}
-			});
+			} else {
+				self.saveSettings(extension, {enable: checked});
+			}
 		});
 	}
 });
