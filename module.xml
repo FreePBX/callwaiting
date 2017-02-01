@@ -4,11 +4,12 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>13.0.4</version>
+	<version>13.0.4.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*13.0.4.1* FREEPBX-13720 Make import and export less generic for bulkhandler
 		*13.0.4* FREEPBX-11449 Sanatize bulk handler import
 		*13.0.3* FREEPBX-11443 check to make sure setting exists before processing it
 		*13.0.2* FREEPBX-11369 add bulk handler hook
