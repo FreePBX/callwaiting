@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX callwaitning\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 16:02-0800\n"
+"POT-Creation-Date: 2017-01-31 17:18-0800\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -44,24 +44,32 @@ msgstr ""
 msgid "Call Waiting"
 msgstr "Samtal väntar"
 
-#: install.php:10
+#: callwaiting.i18n.php:12 install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Aktivera Samtal väntar"
 
-#: install.php:11
+#: callwaiting.i18n.php:10 install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Avaktivera Samtal väntar"
 
-#: Callwaiting.class.php:57
+#: Callwaiting.class.php:58
 msgid "Call Waiting Enabled"
 msgstr ""
 
-#: Callwaiting.class.php:58
+#: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
+msgstr ""
+
+#: functions.inc.php:63
+msgid "Call Waiting: OFF"
+msgstr ""
+
+#: functions.inc.php:44
+msgid "Call Waiting: ON"
 msgstr ""
 
 #: ucp/views/settings.php:4

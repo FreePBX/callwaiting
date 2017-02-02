@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for callwaiting
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 16:02-0800\n"
+"POT-Creation-Date: 2017-01-31 17:18-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,24 +33,34 @@ msgstr ""
 msgid "Call Waiting"
 msgstr ""
 
+#: callwaiting.i18n.php:12
 #: install.php:10
 msgid "Call Waiting - Activate"
 msgstr ""
 
+#: callwaiting.i18n.php:10
 #: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr ""
 
-#: Callwaiting.class.php:57
+#: Callwaiting.class.php:58
 msgid "Call Waiting Enabled"
 msgstr ""
 
-#: Callwaiting.class.php:58
+#: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
+msgstr ""
+
+#: functions.inc.php:63
+msgid "Call Waiting: OFF"
+msgstr ""
+
+#: functions.inc.php:44
+msgid "Call Waiting: ON"
 msgstr ""
 
 #: ucp/views/settings.php:4

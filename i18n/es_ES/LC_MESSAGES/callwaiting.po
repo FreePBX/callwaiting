@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo callwaiting module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 16:02-0800\n"
-"PO-Revision-Date: 2015-03-23 23:56+0200\n"
+"POT-Creation-Date: 2017-01-31 17:18-0800\n"
+"PO-Revision-Date: 2016-06-06 20:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
 "callwaiting/es_ES/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -34,25 +34,33 @@ msgstr "Aplicaciones"
 msgid "Call Waiting"
 msgstr "Llamada en espera"
 
-#: install.php:10
+#: callwaiting.i18n.php:12 install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Activar llamada en espera"
 
-#: install.php:11
+#: callwaiting.i18n.php:10 install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Desactivar llamada en espera"
 
-#: Callwaiting.class.php:57
-msgid "Call Waiting Enabled"
-msgstr ""
-
 #: Callwaiting.class.php:58
+msgid "Call Waiting Enabled"
+msgstr "Llamada en Espera Habilitado"
+
+#: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
-msgstr ""
+msgstr "Llamada en Espera habilitado. Dejar en blanco para deshabilitar"
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
 msgstr "Llamada en Espera ha sido actualizado!"
+
+#: functions.inc.php:63
+msgid "Call Waiting: OFF"
+msgstr ""
+
+#: functions.inc.php:44
+msgid "Call Waiting: ON"
+msgstr ""
 
 #: ucp/views/settings.php:4
 msgid "Enable"

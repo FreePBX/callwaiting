@@ -41,7 +41,8 @@ class Callwaiting implements BMO {
 	}
 
 	public function setStatusByExtension($extension, $state = '') {
-		if ($state != "") {
+		$state = trim($state);
+		if (!empty($state)) {
 			$ret = $this->FreePBX->astman->database_put('CW',$extension,$state);
 		} else {
 			$ret = $this->FreePBX->astman->database_del('CW',$extension);
@@ -70,7 +71,11 @@ class Callwaiting implements BMO {
 			$extens = $this->getAllStatuses();
 			foreach ($extens as $key => $value) {
 				$ext = substr($key,4);
-				$data[$ext] = array('callwaiting_enable' => $value);
+				if($value === 'ENABLED'){
+					$data[$ext] = array('callwaiting_enable' => $value);
+				}else{
+					$data[$ext] = array('callwaiting_enable' => '');
+				}
 			}
 			break;
 		}
@@ -82,8 +87,11 @@ class Callwaiting implements BMO {
 				foreach ($rawData as $data) {
 					if(isset($data['callwaiting_enable'])) {
 						$curVal = trim($data['callwaiting_enable']);
-						$curVal = empty($curVal)?'':'ENABLED';
-						$this->setStatusByExtension($data['extension'], $curVal);
+						if($curVal === 'ENABLED'){
+							$this->setStatusByExtension($data['extension'], $curVal);
+						}else{
+							$this->setStatusByExtension($data['extension']);
+						}
 					}
 				}
 			break;
