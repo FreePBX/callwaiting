@@ -4,11 +4,12 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>14.0.1.1</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*15.0.1* Impliment Backup
 		*14.0.1.1* UCP fixes and updates
 		*14.0.1* UCP 14
 	</changelog>
@@ -20,6 +21,6 @@
 		</bulkhandler>
 	</hooks>
 	<supported>
-		<version>14.0</version>
+		<version>15.0</version>
 	</supported>
 </module>
