@@ -12,6 +12,6 @@ class Restore Extends Base\RestoreBase{
       }
       $final[] = ['callwaiting_enable' => $value['callwaiting_enable'], 'extension' => $key]; 
     }
-    $this->FreePBX->bulkhandlerImport('extensions',$final);
+    $this->FreePBX->Callwaiting->bulkhandlerImport('extensions',$final);
   }
 }
