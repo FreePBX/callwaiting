@@ -8,16 +8,15 @@ msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-01-31 17:18-0800\n"
-"PO-Revision-Date: 2015-03-11 21:36+0200\n"
-"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
-"callwaiting/bg_BG/>\n"
+"PO-Revision-Date: 2018-07-03 13:36+0000\n"
+"Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian <http://*/projects/freepbx/callwaiting/bg/>\n"
+"Language: bg_BG\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.19.1\n"
 "X-Poedit-Language: Bulgarian\n"
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
@@ -49,11 +48,12 @@ msgstr "Чакащо Повикване - Изключи"
 
 #: Callwaiting.class.php:58
 msgid "Call Waiting Enabled"
-msgstr ""
+msgstr "Чакащо Повикване е Включено"
 
 #: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
+"Чакащо Повикване е Включено: РАЗРЕШЕН за включване, празно за изключване"
 
 #: ucp/Callwaiting.class.php:87
 msgid "Call Waiting Has Been Updated!"
@@ -61,11 +61,11 @@ msgstr "Чакащо Повикване е Актуализирано!"
 
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
-msgstr ""
+msgstr "Чакащо Повикване: ИЗКЛЮЧЕНО"
 
 #: functions.inc.php:44
 msgid "Call Waiting: ON"
-msgstr ""
+msgstr "Чакащо Повикване: ВКЛЮЧЕНО"
 
 #: ucp/views/settings.php:4
 msgid "Enable"
