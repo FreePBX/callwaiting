@@ -19,32 +19,24 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-31 17:18-0800\n"
-"PO-Revision-Date: 2017-03-05 20:14+0200\n"
-"Last-Translator: Francis <fbinet@solist.ca>\n"
-"Language-Team: French "
-"<http://weblate.freepbx.org/projects/freepbx/callwaiting/fr_FR/>\n"
+"POT-Creation-Date: 2017-02-01 18:27-0800\n"
+"PO-Revision-Date: 2016-02-06 09:15+0200\n"
+"Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
+"Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
+"callwaiting/fr_FR/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.4\n"
-
-#: ucp/views/settings.php:12
-msgid ""
-"A service whereby someone making a telephone call is notified of an incoming "
-"call and is able to place the first call on hold while answering the second."
-msgstr ""
-"Un service qui permet à quelqu'un de faire un appel téléphonique est averti "
-"d'un appel entrant et est capable de mettre le premier appel en attente "
-"pendant qu'il répond au deuxième."
+"X-Generator: Weblate 2.2-dev\n"
 
 #: callwaiting.i18n.php:6
 msgid "Applications"
 msgstr "Applications"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
+#: ucp/Callwaiting.class.php:101
 msgid "Call Waiting"
 msgstr "Appel en attente"
 
@@ -62,24 +54,45 @@ msgstr "Appel en attente activé"
 
 #: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
-msgstr "Appel en attente activé: Cocher pour activer; blanc pour désactiver"
+msgstr ""
 
-#: ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:150
 msgid "Call Waiting Has Been Updated!"
 msgstr "L'appel en attente a été modifié !"
 
+#: ucp/Callwaiting.class.php:71
+#, php-format
+msgid "Call Waiting for %s"
+msgstr ""
+
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
-msgstr "Appel en attente: Désactivé"
+msgstr ""
 
 #: functions.inc.php:44
 msgid "Call Waiting: ON"
-msgstr "Appel en attente: Activé"
+msgstr ""
 
-#: ucp/views/settings.php:4
-msgid "Enable"
-msgstr "Activer"
+#: ucp/views/widget.php:2
+msgid "Disabled"
+msgstr ""
+
+#: ucp/views/widget.php:2
+msgid "Enabled"
+msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
 msgstr "Fournit une option pour activer / désactiver l'appel en attente"
+
+#~ msgid ""
+#~ "A service whereby someone making a telephone call is notified of an "
+#~ "incoming call and is able to place the first call on hold while answering "
+#~ "the second."
+#~ msgstr ""
+#~ "Un service qui permet à quelqu'un de faire un appel téléphonique est "
+#~ "averti d'un appel entrant et est capable de mettre le premier appel en "
+#~ "attente pendant qu'il répond au deuxième."
+
+#~ msgid "Enable"
+#~ msgstr "Activer"
