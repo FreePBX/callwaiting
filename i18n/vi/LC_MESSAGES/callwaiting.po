@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-31 17:18-0800\n"
+"POT-Creation-Date: 2018-07-19 18:00-0400\n"
 "PO-Revision-Date: 2017-06-07 16:50+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/callwaiting/vi/>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"callwaiting/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,20 +21,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: ucp/views/settings.php:12
-msgid ""
-"A service whereby someone making a telephone call is notified of an incoming "
-"call and is able to place the first call on hold while answering the second."
-msgstr ""
-"Một dịch vụ mà nhờ đó con người có thể thực hiện một cuộc gọi điện thoại "
-"được thông báo về cuộc gọi đang đến và có thể trả lời cuộc gọi thứ hai và "
-"giữ cuộc gọi đầu tiên ở chế độ chờ."
-
 #: callwaiting.i18n.php:6
 msgid "Applications"
 msgstr "Các ứng dụng"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
+#: ucp/Callwaiting.class.php:101
 msgid "Call Waiting"
 msgstr "Chờ cuộc gọi"
 
@@ -54,9 +46,14 @@ msgstr "Chờ cuộc gọi đã bật"
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr "Tính năng Chờ cuộc gọi đã bật: ENABLED để bật, để trống để vô hiệu"
 
-#: ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:150
 msgid "Call Waiting Has Been Updated!"
 msgstr "Chờ cuộc gọi đã được cập nhật!"
+
+#: ucp/Callwaiting.class.php:71
+#, php-format
+msgid "Call Waiting for %s"
+msgstr ""
 
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
@@ -66,10 +63,26 @@ msgstr "Chờ cuộc gọi: TẮT"
 msgid "Call Waiting: ON"
 msgstr "Chờ cuộc gọi: BẬT"
 
-#: ucp/views/settings.php:4
-msgid "Enable"
-msgstr "Bật"
+#: ucp/views/widget.php:2
+msgid "Disabled"
+msgstr ""
+
+#: ucp/views/widget.php:2
+msgid "Enabled"
+msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
 msgstr "Cung cấp một lựa chọn để bật/ tắt tính năng chờ cuộc gọi"
+
+#~ msgid ""
+#~ "A service whereby someone making a telephone call is notified of an "
+#~ "incoming call and is able to place the first call on hold while answering "
+#~ "the second."
+#~ msgstr ""
+#~ "Một dịch vụ mà nhờ đó con người có thể thực hiện một cuộc gọi điện thoại "
+#~ "được thông báo về cuộc gọi đang đến và có thể trả lời cuộc gọi thứ hai và "
+#~ "giữ cuộc gọi đầu tiên ở chế độ chờ."
+
+#~ msgid "Enable"
+#~ msgstr "Bật"

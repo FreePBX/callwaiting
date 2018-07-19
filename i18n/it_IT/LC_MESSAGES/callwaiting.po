@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-31 17:18-0800\n"
+"POT-Creation-Date: 2018-07-19 18:00-0400\n"
 "PO-Revision-Date: 2018-05-28 15:54+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/callwaiting/it/>\n"
@@ -20,20 +20,12 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: ucp/views/settings.php:12
-msgid ""
-"A service whereby someone making a telephone call is notified of an incoming "
-"call and is able to place the first call on hold while answering the second."
-msgstr ""
-"Un servizio tramite il quale una persona che effettua una chiamata "
-"telefonica viene avvisata di una chiamata in arrivo ed è in grado di mettere "
-"in attesa la prima chiamata rispondendo al secondo."
-
 #: callwaiting.i18n.php:6
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
+#: ucp/Callwaiting.class.php:101
 msgid "Call Waiting"
 msgstr "Avviso di Chiamata"
 
@@ -54,9 +46,14 @@ msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 "Avviso di chiamata abilitato: ABILITATO per abilitare, vuoto per disabilitare"
 
-#: ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:150
 msgid "Call Waiting Has Been Updated!"
 msgstr "L'avviso di chiamata è stato aggiornato!"
+
+#: ucp/Callwaiting.class.php:71
+#, php-format
+msgid "Call Waiting for %s"
+msgstr ""
 
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
@@ -66,10 +63,26 @@ msgstr "Avviso di chiamata: OFF"
 msgid "Call Waiting: ON"
 msgstr "Avviso di chiamata: ON"
 
-#: ucp/views/settings.php:4
-msgid "Enable"
-msgstr "Abilitare"
+#: ucp/views/widget.php:2
+msgid "Disabled"
+msgstr ""
+
+#: ucp/views/widget.php:2
+msgid "Enabled"
+msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
 msgstr "Fornisce un'opzione per attivare / disattivare l'avviso di chiamata"
+
+#~ msgid ""
+#~ "A service whereby someone making a telephone call is notified of an "
+#~ "incoming call and is able to place the first call on hold while answering "
+#~ "the second."
+#~ msgstr ""
+#~ "Un servizio tramite il quale una persona che effettua una chiamata "
+#~ "telefonica viene avvisata di una chiamata in arrivo ed è in grado di "
+#~ "mettere in attesa la prima chiamata rispondendo al secondo."
+
+#~ msgid "Enable"
+#~ msgstr "Abilitare"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-31 17:18-0800\n"
+"POT-Creation-Date: 2018-07-19 18:00-0400\n"
 "PO-Revision-Date: 2018-07-03 13:36+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/callwaiting/bg/>\n"
@@ -21,20 +21,12 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ucp/views/settings.php:12
-msgid ""
-"A service whereby someone making a telephone call is notified of an incoming "
-"call and is able to place the first call on hold while answering the second."
-msgstr ""
-"Услуга при която ако провеждате телефонен разговор ще бъдете информиран за "
-"входящо обаждане и ще имате възможност да задържите първия разговор за да "
-"отговорите на втория."
-
 #: callwaiting.i18n.php:6
 msgid "Applications"
 msgstr "Приложения"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:41
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
+#: ucp/Callwaiting.class.php:101
 msgid "Call Waiting"
 msgstr "Чакащо Повикване"
 
@@ -55,9 +47,14 @@ msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 "Чакащо Повикване е Включено: РАЗРЕШЕН за включване, празно за изключване"
 
-#: ucp/Callwaiting.class.php:87
+#: ucp/Callwaiting.class.php:150
 msgid "Call Waiting Has Been Updated!"
 msgstr "Чакащо Повикване е Актуализирано!"
+
+#: ucp/Callwaiting.class.php:71
+#, php-format
+msgid "Call Waiting for %s"
+msgstr ""
 
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
@@ -67,10 +64,26 @@ msgstr "Чакащо Повикване: ИЗКЛЮЧЕНО"
 msgid "Call Waiting: ON"
 msgstr "Чакащо Повикване: ВКЛЮЧЕНО"
 
-#: ucp/views/settings.php:4
-msgid "Enable"
-msgstr "Разреши"
+#: ucp/views/widget.php:2
+msgid "Disabled"
+msgstr ""
+
+#: ucp/views/widget.php:2
+msgid "Enabled"
+msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
 msgstr "Предоставя възможност за включване и изключване на чакащо повикване"
+
+#~ msgid ""
+#~ "A service whereby someone making a telephone call is notified of an "
+#~ "incoming call and is able to place the first call on hold while answering "
+#~ "the second."
+#~ msgstr ""
+#~ "Услуга при която ако провеждате телефонен разговор ще бъдете информиран "
+#~ "за входящо обаждане и ще имате възможност да задържите първия разговор за "
+#~ "да отговорите на втория."
+
+#~ msgid "Enable"
+#~ msgstr "Разреши"
