@@ -22,12 +22,7 @@ class Callwaiting implements BMO {
 	public function uninstall() {
 
 	}
-	public function backup(){
 
-	}
-	public function restore($backup){
-
-	}
 	public function genConfig() {
 
 	}
