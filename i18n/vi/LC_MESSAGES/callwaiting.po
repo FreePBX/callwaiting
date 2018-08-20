@@ -3,51 +3,52 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for callwaiting
-# Copyright (C) 2008-2016 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-01 18:27-0800\n"
-"PO-Revision-Date: 2018-07-27 13:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
-"Language-Team: German <http://*/projects/freepbx/callwaiting/de/>\n"
-"Language: de_DE\n"
+"POT-Creation-Date: 2018-07-19 18:00-0400\n"
+"PO-Revision-Date: 2017-06-07 16:50+0200\n"
+"Last-Translator: Peter Trinh <ftek@ymail.com>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"callwaiting/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: callwaiting.i18n.php:6
 msgid "Applications"
-msgstr "Anwendungen"
+msgstr "Các ứng dụng"
 
 #: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
 #: ucp/Callwaiting.class.php:101
 msgid "Call Waiting"
-msgstr "Anklopfen"
+msgstr "Chờ cuộc gọi"
 
 #: callwaiting.i18n.php:12 install.php:10
 msgid "Call Waiting - Activate"
-msgstr "Anklopfen aktivieren"
+msgstr "Chế độ chờ cuộc gọi khi thuê bao đã kích hoạt"
 
 #: callwaiting.i18n.php:10 install.php:11
 msgid "Call Waiting - Deactivate"
-msgstr "Anklopfen deaktivieren"
+msgstr "Chế độ chờ cuộc gọi khi thuê bao chưa kích hoạt"
 
 #: Callwaiting.class.php:58
 msgid "Call Waiting Enabled"
-msgstr "Anklopfen aktiviert"
+msgstr "Chờ cuộc gọi đã bật"
 
 #: Callwaiting.class.php:59
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
-msgstr "Anklopfen aktiviert: ENABLED aktiviert, leer deaktiviert"
+msgstr "Tính năng Chờ cuộc gọi đã bật: ENABLED để bật, để trống để vô hiệu"
 
 #: ucp/Callwaiting.class.php:150
 msgid "Call Waiting Has Been Updated!"
-msgstr "Anklopfen wurde aktualisiert!"
+msgstr "Chờ cuộc gọi đã được cập nhật!"
 
 #: ucp/Callwaiting.class.php:71
 #, php-format
@@ -56,11 +57,11 @@ msgstr ""
 
 #: functions.inc.php:63
 msgid "Call Waiting: OFF"
-msgstr ""
+msgstr "Chờ cuộc gọi: TẮT"
 
 #: functions.inc.php:44
 msgid "Call Waiting: ON"
-msgstr ""
+msgstr "Chờ cuộc gọi: BẬT"
 
 #: ucp/views/widget.php:2
 msgid "Disabled"
@@ -72,16 +73,16 @@ msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
-msgstr "Bietet die Möglichkeit zum Ein- / Ausschalten des Anklopfens"
+msgstr "Cung cấp một lựa chọn để bật/ tắt tính năng chờ cuộc gọi"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "
 #~ "incoming call and is able to place the first call on hold while answering "
 #~ "the second."
 #~ msgstr ""
-#~ "Bietet die Möglichkeit während eines Telefonates, einen weiteren "
-#~ "eingehenden Anruf signalisiert zu bekommen. Das Telefonat kann dann auf "
-#~ "halten gelegt werden um den zweiten anzunehmen."
+#~ "Một dịch vụ mà nhờ đó con người có thể thực hiện một cuộc gọi điện thoại "
+#~ "được thông báo về cuộc gọi đang đến và có thể trả lời cuộc gọi thứ hai và "
+#~ "giữ cuộc gọi đầu tiên ở chế độ chờ."
 
 #~ msgid "Enable"
-#~ msgstr "Aktivieren"
+#~ msgstr "Bật"
