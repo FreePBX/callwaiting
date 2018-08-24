@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 18:27-0800\n"
-"PO-Revision-Date: 2018-07-27 13:00+0000\n"
+"PO-Revision-Date: 2018-08-25 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/callwaiting/de/>\n"
 "Language: de_DE\n"
@@ -64,11 +64,11 @@ msgstr ""
 
 #: ucp/views/widget.php:2
 msgid "Disabled"
-msgstr ""
+msgstr "Deaktiviert"
 
 #: ucp/views/widget.php:2
 msgid "Enabled"
-msgstr ""
+msgstr "Aktiviert"
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
