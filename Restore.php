@@ -7,7 +7,7 @@ class Restore Extends Base\RestoreBase{
 		/** Lets pretend we are bulk handler */
 		$final = [];
 		foreach($configs['data'] as $key => $value){
-			if(isset($value['callwaiting_enable'])) {
+			if(!isset($value['callwaiting_enable'])) {
 				continue;
 			}
 			$final[] = ['callwaiting_enable' => $value['callwaiting_enable'], 'extension' => $key];
