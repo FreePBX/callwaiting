@@ -3,6 +3,7 @@
 	<repo>standard</repo>
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
+	<more-info>https://wiki.freepbx.org/display/F2/Call+Waiting+Module</more-info>
 	<category>Applications</category>
 	<version>13.0.4.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
