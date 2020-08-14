@@ -5,6 +5,7 @@
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
 	<version>16.0.1</version>
+	<more-info>https://wiki.freepbx.org/display/F2/Call+Waiting+Module</more-info>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
