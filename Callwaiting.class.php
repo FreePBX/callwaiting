@@ -41,7 +41,6 @@ class Callwaiting implements BMO {
 			$ret = $this->FreePBX->astman->database_put('CW',$extension,$state);
 		} else {
 			$ret = $this->FreePBX->astman->database_del('CW',$extension);
-			$ret = $ret['result'];
 		}
 		return $ret;
 	}
