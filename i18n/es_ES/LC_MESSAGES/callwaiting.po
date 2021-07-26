@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo callwaiting module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-02 08:58+0000\n"
+"POT-Creation-Date: 2021-07-26 07:12+0000\n"
 "PO-Revision-Date: 2016-06-06 20:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -34,11 +34,11 @@ msgstr "Activar llamada en espera"
 msgid "Call Waiting - Deactivate"
 msgstr "Desactivar llamada en espera"
 
-#: Callwaiting.class.php:82
+#: Callwaiting.class.php:83
 msgid "Call Waiting Enabled"
 msgstr "Llamada en Espera Habilitado"
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:84
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr "Llamada en Espera habilitado. Dejar en blanco para deshabilitar"
 
