@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:12+0000\n"
+"POT-Creation-Date: 2021-07-26 07:14+0000\n"
 "PO-Revision-Date: 2017-06-07 16:50+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,11 +38,11 @@ msgstr "Chế độ chờ cuộc gọi khi thuê bao đã kích hoạt"
 msgid "Call Waiting - Deactivate"
 msgstr "Chế độ chờ cuộc gọi khi thuê bao chưa kích hoạt"
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:82
 msgid "Call Waiting Enabled"
 msgstr "Chờ cuộc gọi đã bật"
 
-#: Callwaiting.class.php:84
+#: Callwaiting.class.php:83
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr "Tính năng Chờ cuộc gọi đã bật: ENABLED để bật, để trống để vô hiệu"
 

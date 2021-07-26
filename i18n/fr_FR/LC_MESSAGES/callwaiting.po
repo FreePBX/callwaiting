@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:12+0000\n"
+"POT-Creation-Date: 2021-07-26 07:14+0000\n"
 "PO-Revision-Date: 2016-02-06 09:15+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -48,11 +48,11 @@ msgstr "Appel en attente - Activer"
 msgid "Call Waiting - Deactivate"
 msgstr "Appel en attente - Désactiver"
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:82
 msgid "Call Waiting Enabled"
 msgstr "Appel en attente activé"
 
-#: Callwaiting.class.php:84
+#: Callwaiting.class.php:83
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
