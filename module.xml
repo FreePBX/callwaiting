@@ -5,11 +5,12 @@
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
 	<more-info>https://wiki.freepbx.org/display/FPG/Call+Waiting+Module</more-info>
-	<version>15.0.4.5</version>
+	<version>15.0.4.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*15.0.4.6* FREEI-3608 whoops error on rebuild 
 		*15.0.4.5* FREEI-3571 Add getWidgetListByModule method callwaitign module 
 		*15.0.4.4* Packaging of ver 15.0.4.4
 		*15.0.4.3* Packaging of ver 15.0.4.3
