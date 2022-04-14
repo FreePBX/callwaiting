@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: 2.10\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-01 18:27-0800\n"
-"PO-Revision-Date: 2022-04-14 04:51+0000\n"
+"PO-Revision-Date: 2022-04-15 05:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "callwaiting/ru/>\n"
@@ -86,7 +86,7 @@ msgstr "Включено"
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
-msgstr "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
+msgstr "Предоставляет возможность включения/выключения ожидания вызова"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "
