@@ -4,17 +4,13 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>16.0.5</version>
+	<version>17.0.1</version>
 	<more-info>https://wiki.freepbx.org/display/F2/Call+Waiting+Module</more-info>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
-		*16.0.5* FREEPBX-22625 call waiting field is left blank in the import file then getting error 
-		*16.0.4* FREEI-3608 whoops error on rebuild 
-		*16.0.3* FREEI-3571 Add getWidgetListByModule method callwaitign module 
-		*16.0.2* Packaging of ver 16.0.2
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
 	<hooks>
 		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
@@ -24,6 +20,6 @@
 		</bulkhandler>
 	</hooks>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
