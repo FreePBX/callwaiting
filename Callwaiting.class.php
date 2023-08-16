@@ -36,7 +36,7 @@ class Callwaiting implements BMO {
 	}
 
 	public function setStatusByExtension($extension, $state = '') {
-		$state = trim($state);
+		$state = trim((string) $state);
 		if (!empty($state)) {
 			$ret = $this->FreePBX->astman->database_put('CW',$extension,$state);
 		} else {
@@ -52,7 +52,7 @@ class Callwaiting implements BMO {
 	public function getWidgetListByModule($defaultexten, $userid,$widget) {
 		// if the widget_type_id is not defaultextension and widget_type_id is not in extensions
 		// then return only the defaultexten details
-		$widgets = array();
+		$widgets = [];
 		$widget_type_id = $widget['widget_type_id'];// this will be an extension number
 		$extensions = $this->FreePBX->Ucp->getCombinedSettingByID($userid,'Settings','assigned');
 		$extensions = is_array($extensions)?$extensions:[];
@@ -77,12 +77,7 @@ class Callwaiting implements BMO {
 	public function bulkhandlerGetHeaders($type) {
 		switch ($type) {
 			case 'extensions':
-				$headers = array(
-					'callwaiting_enable' => array(
-						'identifier' => _('Call Waiting Enabled'),
-						'description' => _('Call Waiting Enabled: ENABLED to enable, blank to disable'),
-					),
-				);
+				$headers = ['callwaiting_enable' => ['identifier' => _('Call Waiting Enabled'), 'description' => _('Call Waiting Enabled: ENABLED to enable, blank to disable')]];
 				return $headers;
 			break;
 		}
@@ -91,14 +86,14 @@ class Callwaiting implements BMO {
 		$data = NULL;
 		switch ($type) {
 			case 'extensions':
-			$data = array();
+			$data = [];
 			$extens = $this->getAllStatuses();
 			foreach ($extens as $key => $value) {
-				$ext = substr($key,4);
+				$ext = substr((string) $key,4);
 				if($value === 'ENABLED'){
-					$data[$ext] = array('callwaiting_enable' => $value);
+					$data[$ext] = ['callwaiting_enable' => $value];
 				}else{
-					$data[$ext] = array('callwaiting_enable' => '');
+					$data[$ext] = ['callwaiting_enable' => ''];
 				}
 			}
 			break;
@@ -110,7 +105,7 @@ class Callwaiting implements BMO {
 			case 'extensions':
 				foreach ($rawData as $data) {
 					if(isset($data['callwaiting_enable'])) {
-						$curVal = trim($data['callwaiting_enable']);
+						$curVal = trim((string) $data['callwaiting_enable']);
 						if($curVal === 'ENABLED'){
 							$this->setStatusByExtension($data['extension'], $curVal);
 						}else{

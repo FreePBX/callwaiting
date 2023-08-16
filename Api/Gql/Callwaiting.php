@@ -12,8 +12,7 @@ class Callwaiting extends Base {
 		if($this->checkAllReadScope()) {
 			$user = $this->typeContainer->get('coreuser');
 
-			$user->addFieldCallback(function() {
-				return [
+			$user->addFieldCallback(fn() => [
 					'callwaiting' => [
 						'type' => Type::boolean(),
 						'description' => 'Turn off/on Call waiting',
@@ -24,8 +23,7 @@ class Callwaiting extends Base {
 							return $this->freepbx->Callwaiting->getStatusByExtension($user['extension']) === "ENABLED";
 						}
 					]
-				];
-			});
+				]);
 		}
 	}
 }

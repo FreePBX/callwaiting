@@ -37,7 +37,7 @@ class Callwaiting extends Modules{
 	}
 
 	public function poll($data) {
-		$states = array();
+		$states = [];
 		foreach($data as $ext) {
 			if(!$this->_checkExtension($ext)) {
 				continue;
@@ -45,7 +45,7 @@ class Callwaiting extends Modules{
 			$states[$ext] = $this->UCP->FreePBX->Callwaiting->getStatusByExtension($ext) == "ENABLED" ? true : false;
 		}
 
-		return array("states" => $states);
+		return ["states" => $states];
 	}
 
 	public function getWidgetList() {
@@ -55,7 +55,7 @@ class Callwaiting extends Modules{
 	}
 
 	public function getSimpleWidgetList() {
-		$widgets = array();
+		$widgets = [];
 
 		$extensions = $this->UCP->getCombinedSettingByID($this->userId,'Settings','assigned');
 
@@ -69,41 +69,25 @@ class Callwaiting extends Modules{
 					$name = $data['description'];
 				}
 
-				$widgets[$extension] = array(
-					"display" => $name,
-					"description" => sprintf(_("Call Waiting for %s"),$name),
-					"defaultsize" => array("height" => 2, "width" => 1),
-					"minsize" => array("height" => 2, "width" => 1)
-				);
+				$widgets[$extension] = ["display" => $name, "description" => sprintf(_("Call Waiting for %s"),$name), "defaultsize" => ["height" => 2, "width" => 1], "minsize" => ["height" => 2, "width" => 1]];
 			}
 		}
 
 		if (empty($widgets)) {
-			return array();
+			return [];
 		}
 
-		return array(
-			"rawname" => "callwaiting",
-			"display" => _("Call Waiting"),
-			"icon" => "fa fa-clock-o",
-			"list" => $widgets
-		);
+		return ["rawname" => "callwaiting", "display" => _("Call Waiting"), "icon" => "fa fa-clock-o", "list" => $widgets];
 	}
 
 	public function getWidgetDisplay($id) {
 		if (!$this->_checkExtension($id)) {
-			return array();
+			return [];
 		}
 
-		$displayvars = array(
-			"extension" => $id,
-			"enabled" => $this->UCP->FreePBX->Callwaiting->getStatusByExtension($id)
-		);
+		$displayvars = ["extension" => $id, "enabled" => $this->UCP->FreePBX->Callwaiting->getStatusByExtension($id)];
 
-		$display = array(
-			'title' => _("Call Waiting"),
-			'html' => $this->load_view(__DIR__.'/views/widget.php',$displayvars)
-		);
+		$display = ['title' => _("Call Waiting"), 'html' => $this->load_view(__DIR__.'/views/widget.php',$displayvars)];
 
 		return $display;
 	}
@@ -125,13 +109,10 @@ class Callwaiting extends Modules{
 		if(!$this->_checkExtension($_POST['ext'])) {
 			return false;
 		}
-		switch($command) {
-			case 'enable':
-				return true;
-			default:
-				return false;
-			break;
-		}
+		return match ($command) {
+      'enable' => true,
+      default => false,
+  };
 	}
 
 	/**
@@ -142,7 +123,7 @@ class Callwaiting extends Modules{
 	 * @return mixed Output if success, otherwise false will generate a 500 error serverside
 	 */
 	function ajaxHandler() {
-		$return = array("status" => false, "message" => "");
+		$return = ["status" => false, "message" => ""];
 		switch($_REQUEST['command']) {
 			case 'enable':
 				if($_POST['enable'] == 'true') {
@@ -150,7 +131,7 @@ class Callwaiting extends Modules{
 				} else {
 					$this->UCP->FreePBX->Callwaiting->setStatusByExtension($_POST['ext']);
 				}
-				return array("status" => true, "alert" => "success", "message" => _('Call Waiting Has Been Updated!'));
+				return ["status" => true, "alert" => "success", "message" => _('Call Waiting Has Been Updated!')];
 				break;
 			default:
 				return $return;
@@ -160,7 +141,7 @@ class Callwaiting extends Modules{
 
 	private function _checkExtension($extension) {
 		$extensions = $this->UCP->getCombinedSettingByID($this->userId,'Settings','assigned');
-		$extensions = is_array($extensions) ? $extensions : array();
+		$extensions = is_array($extensions) ? $extensions : [];
 		return in_array($extension,$extensions);
 	}
 }
