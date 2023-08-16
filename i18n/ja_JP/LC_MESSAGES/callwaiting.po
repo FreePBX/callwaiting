@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:14+0000\n"
+"POT-Creation-Date: 2023-08-16 10:39+0000\n"
 "PO-Revision-Date: 2014-02-17 06:03+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callwaiting/ja/"
@@ -53,8 +53,8 @@ msgstr ""
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
-#: ucp/Callwaiting.class.php:101
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "コールウェイティング"
 
@@ -66,19 +66,19 @@ msgstr "割り込み通話 - アクティベート"
 msgid "Call Waiting - Deactivate"
 msgstr "割り込み通話 - 非アクティベート"
 
-#: Callwaiting.class.php:82
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled"
 msgstr ""
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
-#: ucp/Callwaiting.class.php:150
+#: ucp/Callwaiting.class.php:134
 msgid "Call Waiting Has Been Updated!"
 msgstr ""
 
-#: ucp/Callwaiting.class.php:71
+#: ucp/Callwaiting.class.php:72
 #, php-format
 msgid "Call Waiting for %s"
 msgstr ""

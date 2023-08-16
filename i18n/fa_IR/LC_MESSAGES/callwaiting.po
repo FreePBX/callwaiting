@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:14+0000\n"
+"POT-Creation-Date: 2023-08-16 10:39+0000\n"
 "PO-Revision-Date: 2016-04-30 17:09+0200\n"
 "Last-Translator: psdk <hyavari26@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -25,8 +25,8 @@ msgstr ""
 msgid "Applications"
 msgstr "برنامه های کاربردی"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
-#: ucp/Callwaiting.class.php:101
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "انتظار مکالمه"
 
@@ -38,20 +38,20 @@ msgstr "انتظار مکالمه - فعال سازی"
 msgid "Call Waiting - Deactivate"
 msgstr "انتظار مکالمه - غیرفعال سازی"
 
-#: Callwaiting.class.php:82
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled"
 msgstr "انتظار مکالمه فعال شد"
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 "فعال کردن انتظار مکالمه: فعال برای فعال کردن، و خالی برای غیر فعال کردن"
 
-#: ucp/Callwaiting.class.php:150
+#: ucp/Callwaiting.class.php:134
 msgid "Call Waiting Has Been Updated!"
 msgstr "انتظار مکالمه بروز شده است!"
 
-#: ucp/Callwaiting.class.php:71
+#: ucp/Callwaiting.class.php:72
 #, php-format
 msgid "Call Waiting for %s"
 msgstr ""

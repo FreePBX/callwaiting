@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:14+0000\n"
+"POT-Creation-Date: 2023-08-16 10:39+0000\n"
 "PO-Revision-Date: 2018-07-03 13:36+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/callwaiting/bg/>\n"
@@ -25,8 +25,8 @@ msgstr ""
 msgid "Applications"
 msgstr "Приложения"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
-#: ucp/Callwaiting.class.php:101
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Чакащо Повикване"
 
@@ -38,20 +38,20 @@ msgstr "Чакащо Повикване - Включи"
 msgid "Call Waiting - Deactivate"
 msgstr "Чакащо Повикване - Изключи"
 
-#: Callwaiting.class.php:82
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled"
 msgstr "Чакащо Повикване е Включено"
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 "Чакащо Повикване е Включено: РАЗРЕШЕН за включване, празно за изключване"
 
-#: ucp/Callwaiting.class.php:150
+#: ucp/Callwaiting.class.php:134
 msgid "Call Waiting Has Been Updated!"
 msgstr "Чакащо Повикване е Актуализирано!"
 
-#: ucp/Callwaiting.class.php:71
+#: ucp/Callwaiting.class.php:72
 #, php-format
 msgid "Call Waiting for %s"
 msgstr ""

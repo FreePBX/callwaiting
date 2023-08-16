@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-26 07:14+0000\n"
+"POT-Creation-Date: 2023-08-16 10:39+0000\n"
 "PO-Revision-Date: 2015-04-25 00:14+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,8 +38,8 @@ msgstr ""
 msgid "Applications"
 msgstr "Приложения"
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:84
-#: ucp/Callwaiting.class.php:101
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Вторая линия (ожидание вызова)"
 
@@ -51,19 +51,19 @@ msgstr "Разрешить вторую линию"
 msgid "Call Waiting - Deactivate"
 msgstr "Запретить вторую линию"
 
-#: Callwaiting.class.php:82
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled"
 msgstr ""
 
-#: Callwaiting.class.php:83
+#: Callwaiting.class.php:80
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
-#: ucp/Callwaiting.class.php:150
+#: ucp/Callwaiting.class.php:134
 msgid "Call Waiting Has Been Updated!"
 msgstr "Ожидание вызова обновлено!"
 
-#: ucp/Callwaiting.class.php:71
+#: ucp/Callwaiting.class.php:72
 #, php-format
 msgid "Call Waiting for %s"
 msgstr ""
