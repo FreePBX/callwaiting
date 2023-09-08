@@ -1,6 +1,6 @@
 <?php
 // vim: set ai ts=4 sw=4 ft=php:
-
+#[\AllowDynamicProperties]
 class Callwaiting implements BMO {
 
 	public function __construct($freepbx = null) {
