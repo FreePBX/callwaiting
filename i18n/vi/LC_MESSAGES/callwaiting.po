@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:39+0000\n"
+"POT-Creation-Date: 2023-09-12 09:05+0000\n"
 "PO-Revision-Date: 2017-06-07 16:50+0200\n"
 "Last-Translator: Peter Trinh <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -21,20 +21,15 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: callwaiting.i18n.php:6
-msgid "Applications"
-msgstr "Các ứng dụng"
-
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
-#: ucp/Callwaiting.class.php:90
+#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Chờ cuộc gọi"
 
-#: callwaiting.i18n.php:12 install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Chế độ chờ cuộc gọi khi thuê bao đã kích hoạt"
 
-#: callwaiting.i18n.php:10 install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Chế độ chờ cuộc gọi khi thuê bao chưa kích hoạt"
 
@@ -71,9 +66,11 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: callwaiting.i18n.php:8
-msgid "Provides an option to turn on/off call waiting"
-msgstr "Cung cấp một lựa chọn để bật/ tắt tính năng chờ cuộc gọi"
+#~ msgid "Applications"
+#~ msgstr "Các ứng dụng"
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr "Cung cấp một lựa chọn để bật/ tắt tính năng chờ cuộc gọi"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo callwaiting module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:39+0000\n"
+"POT-Creation-Date: 2023-09-12 09:05+0000\n"
 "PO-Revision-Date: 2016-06-06 20:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -17,20 +17,15 @@ msgstr ""
 "X-Poedit-Country: SPAIN\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: callwaiting.i18n.php:6
-msgid "Applications"
-msgstr "Aplicaciones"
-
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
-#: ucp/Callwaiting.class.php:90
+#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Llamada en espera"
 
-#: callwaiting.i18n.php:12 install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Activar llamada en espera"
 
-#: callwaiting.i18n.php:10 install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Desactivar llamada en espera"
 
@@ -67,9 +62,11 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: callwaiting.i18n.php:8
-msgid "Provides an option to turn on/off call waiting"
-msgstr "Provee una opción para encender o apagar llamada en espera"
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr "Provee una opción para encender o apagar llamada en espera"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "

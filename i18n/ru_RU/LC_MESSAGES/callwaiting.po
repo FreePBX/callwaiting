@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.10\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:39+0000\n"
+"POT-Creation-Date: 2023-09-12 09:05+0000\n"
 "PO-Revision-Date: 2015-04-25 00:14+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -34,20 +34,15 @@ msgstr ""
 "X-Generator: Weblate 2.2-dev\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1: 2);\n"
 
-#: callwaiting.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
-
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
-#: ucp/Callwaiting.class.php:90
+#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Вторая линия (ожидание вызова)"
 
-#: callwaiting.i18n.php:12 install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Разрешить вторую линию"
 
-#: callwaiting.i18n.php:10 install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Запретить вторую линию"
 
@@ -84,9 +79,12 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: callwaiting.i18n.php:8
-msgid "Provides an option to turn on/off call waiting"
-msgstr "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr ""
+#~ "Дает возможность подключать/отключать вторую линию (ожидание вызова)"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "

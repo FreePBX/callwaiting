@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 10:39+0000\n"
+"POT-Creation-Date: 2023-09-12 09:05+0000\n"
 "PO-Revision-Date: 2016-02-06 09:15+0200\n"
 "Last-Translator: Nicolas Riendeau <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -31,20 +31,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: callwaiting.i18n.php:6
-msgid "Applications"
-msgstr "Applications"
-
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
-#: ucp/Callwaiting.class.php:90
+#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Appel en attente"
 
-#: callwaiting.i18n.php:12 install.php:10
+#: install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Appel en attente - Activer"
 
-#: callwaiting.i18n.php:10 install.php:11
+#: install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Appel en attente - Désactiver"
 
@@ -81,9 +76,11 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#: callwaiting.i18n.php:8
-msgid "Provides an option to turn on/off call waiting"
-msgstr "Fournit une option pour activer / désactiver l'appel en attente"
+#~ msgid "Applications"
+#~ msgstr "Applications"
+
+#~ msgid "Provides an option to turn on/off call waiting"
+#~ msgstr "Fournit une option pour activer / désactiver l'appel en attente"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "
