@@ -24,7 +24,7 @@
  */
 namespace UCP\Modules;
 use \UCP\Modules as Modules;
-
+#[\AllowDynamicProperties]
 class Callwaiting extends Modules{
 	protected $module = 'Callwaiting';
 	private $user = null;
