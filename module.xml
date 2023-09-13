@@ -4,12 +4,13 @@
 	<name>Call Waiting</name>
 	<description>Provides an option to turn on/off call waiting</description>
 	<category>Applications</category>
-	<version>17.0.2</version>
+	<version>17.0.3</version>
 	<more-info>https://wiki.freepbx.org/display/F2/Call+Waiting+Module</more-info>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<changelog>
+		*17.0.3* Packaging of ver 17.0.3
 		*17.0.2* Packaging of ver 17.0.2
 		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
