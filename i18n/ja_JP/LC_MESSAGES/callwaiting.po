@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 09:05+0000\n"
+"POT-Creation-Date: 2024-01-18 06:12-0500\n"
 "PO-Revision-Date: 2014-02-17 06:03+0200\n"
 "Last-Translator: Kenichi Fukaumi <k.fukaumi@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/callwaiting/ja/"
@@ -49,15 +49,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
+#: callwaiting.i18n.php:6
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "コールウェイティング"
 
-#: install.php:10
+#: callwaiting.i18n.php:12 install.php:10
 msgid "Call Waiting - Activate"
 msgstr "割り込み通話 - アクティベート"
 
-#: install.php:11
+#: callwaiting.i18n.php:10 install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "割り込み通話 - 非アクティベート"
 
@@ -94,8 +99,6 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr "割り込み通話のon/offオプション"
+#: callwaiting.i18n.php:8
+msgid "Provides an option to turn on/off call waiting"
+msgstr "割り込み通話のon/offオプション"

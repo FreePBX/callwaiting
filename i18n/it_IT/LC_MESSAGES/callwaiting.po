@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-12 09:05+0000\n"
+"POT-Creation-Date: 2024-01-18 06:12-0500\n"
 "PO-Revision-Date: 2018-05-28 15:54+0000\n"
 "Last-Translator: Stell0 <stefano.fancello@nethesis.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/callwaiting/it/>\n"
@@ -20,15 +20,20 @@ msgstr ""
 "X-Poedit-Language: Italian\n"
 "X-Poedit-Country: ITALY\n"
 
-#: install.php:9 ucp/Callwaiting.class.php:80 ucp/Callwaiting.class.php:90
+#: callwaiting.i18n.php:6
+msgid "Applications"
+msgstr "Applicazioni"
+
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
+#: ucp/Callwaiting.class.php:90
 msgid "Call Waiting"
 msgstr "Avviso di Chiamata"
 
-#: install.php:10
+#: callwaiting.i18n.php:12 install.php:10
 msgid "Call Waiting - Activate"
 msgstr "Attiva Avviso di Chiamata"
 
-#: install.php:11
+#: callwaiting.i18n.php:10 install.php:11
 msgid "Call Waiting - Deactivate"
 msgstr "Disattiva Avviso di Chiamata"
 
@@ -66,11 +71,9 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
-#~ msgid "Applications"
-#~ msgstr "Applicazioni"
-
-#~ msgid "Provides an option to turn on/off call waiting"
-#~ msgstr "Fornisce un'opzione per attivare / disattivare l'avviso di chiamata"
+#: callwaiting.i18n.php:8
+msgid "Provides an option to turn on/off call waiting"
+msgstr "Fornisce un'opzione per attivare / disattivare l'avviso di chiamata"
 
 #~ msgid ""
 #~ "A service whereby someone making a telephone call is notified of an "
