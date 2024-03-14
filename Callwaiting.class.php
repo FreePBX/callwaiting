@@ -38,7 +38,9 @@ class Callwaiting implements BMO {
 	public function setStatusByExtension($extension, $state = '') {
 		$state = trim((string) $state);
 		if (!empty($state)) {
-			$ret = $this->FreePBX->astman->database_put('CW',$extension,$state);
+			// use asterisk -rx command 
+			$cmd = "asterisk -rx'database put CW $extension $state'";
+			exec($cmd, $ret, $retval);
 		} else {
 			$ret = $this->FreePBX->astman->database_del('CW',$extension);
 		}
