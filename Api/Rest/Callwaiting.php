@@ -12,7 +12,8 @@ class Callwaiting extends Base {
 		*/
 		$app->get('/users', function ($request, $response, $args) {
 			\FreePBX::Modules()->loadFunctionsInc('callwaiting');
-			return $response->withJson(callwaiting_get());
+			$response->getBody()->write(json_encode(callwaiting_get()));
+			return $response->withHeader('Content-Type', 'application/json');
 		})->add($this->checkAllReadScopeMiddleware());
 
 		/**
@@ -22,7 +23,8 @@ class Callwaiting extends Base {
 		 */
 		$app->get('/users/{id}', function ($request, $response, $args) {
 			\FreePBX::Modules()->loadFunctionsInc('callwaiting');
-			return $response->withJson(callwaiting_get($args['id']));
+			$response->getBody()->write(json_encode(callwaiting_get($args['id'])));
+			return $response->withHeader('Content-Type', 'application/json');
 		})->add($this->checkAllReadScopeMiddleware());
 
 		/**
@@ -33,7 +35,8 @@ class Callwaiting extends Base {
 			\FreePBX::Modules()->loadFunctionsInc('callforward');
 			$params = $request->getParsedBody();
 			callwaiting_set($args['id'], $params['state']);
-			return $response->withJson(true);
+			$response->getBody()->write(json_encode(true));
+			return $response->withHeader('Content-Type', 'application/json');
 		})->add($this->checkAllWriteScopeMiddleware());
 	}
 }
