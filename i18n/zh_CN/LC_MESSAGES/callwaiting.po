@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 06:12-0500\n"
+"POT-Creation-Date: 2024-05-28 10:01-0400\n"
 "PO-Revision-Date: 2009-02-01 15:12+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -23,8 +23,8 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:80
-#: ucp/Callwaiting.class.php:90
+#: callwaiting.i18n.php:4 install.php:9 ucp/Callwaiting.class.php:88
+#: ucp/Callwaiting.class.php:127
 msgid "Call Waiting"
 msgstr "呼叫等待"
 
@@ -44,11 +44,11 @@ msgstr ""
 msgid "Call Waiting Enabled: ENABLED to enable, blank to disable"
 msgstr ""
 
-#: ucp/Callwaiting.class.php:134
+#: ucp/Callwaiting.class.php:171
 msgid "Call Waiting Has Been Updated!"
 msgstr ""
 
-#: ucp/Callwaiting.class.php:72
+#: ucp/Callwaiting.class.php:111
 #, php-format
 msgid "Call Waiting for %s"
 msgstr ""
@@ -71,4 +71,16 @@ msgstr ""
 
 #: callwaiting.i18n.php:8
 msgid "Provides an option to turn on/off call waiting"
+msgstr ""
+
+#: ucp/Callwaiting.class.php:74
+msgid "The given extension is empty."
+msgstr ""
+
+#: ucp/Callwaiting.class.php:69
+msgid "There are no assigned extensions."
+msgstr ""
+
+#: ucp/Callwaiting.class.php:78
+msgid "This extension is not assigned to this user."
 msgstr ""
