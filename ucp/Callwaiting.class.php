@@ -54,7 +54,46 @@ class Callwaiting extends Modules{
 		return $widgetList;
 	}
 
+	/**
+	 * validate against rules
+	 */
+	private function validate($extension = false) {
+		$data = array(
+			'hasError' => false,
+			'errorMessages' => []
+		);
+
+		$extensions = $this->UCP->getCombinedSettingByID($this->userId,'Settings','assigned');
+		if (empty($extensions)) {
+			$data['hasError'] = true;
+			$data['errorMessages'][] = _('There are no assigned extensions.');
+		}
+		if ($extension !== false) {
+			if (empty($extension)) {
+				$data['hasError'] = true;
+				$data['errorMessages'][] = _('The given extension is empty.');
+			}
+			if (!$this->_checkExtension($extension)) {
+				$data['hasError'] = true;
+				$data['errorMessages'][] = _('This extension is not assigned to this user.');
+			}
+		}
+
+		return $data;
+	}
+
 	public function getSimpleWidgetList() {
+		$responseData = array(
+			"rawname" => "callwaiting",
+			"display" => _("Call Waiting"),
+			"icon" => "fa fa-clock-o",
+			"list" => []
+		);
+		$errors = $this->validate();
+		if ($errors['hasError']) {
+			return array_merge($responseData, $errors);
+		}
+
 		$widgets = [];
 
 		$extensions = $this->UCP->getCombinedSettingByID($this->userId,'Settings','assigned');
@@ -73,16 +112,14 @@ class Callwaiting extends Modules{
 			}
 		}
 
-		if (empty($widgets)) {
-			return [];
-		}
-
-		return ["rawname" => "callwaiting", "display" => _("Call Waiting"), "icon" => "fa fa-clock-o", "list" => $widgets];
+		$responseData['list'] = $widgets;
+		return $responseData;
 	}
 
 	public function getWidgetDisplay($id) {
-		if (!$this->_checkExtension($id)) {
-			return [];
+		$errors = $this->validate($id);
+		if ($errors['hasError']) {
+			return $errors;
 		}
 
 		$displayvars = ["extension" => $id, "enabled" => $this->UCP->FreePBX->Callwaiting->getStatusByExtension($id)];
