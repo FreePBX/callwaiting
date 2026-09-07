@@ -1,11 +1,12 @@
 <?php
 // vim: set ai ts=4 sw=4 ft=php:
-#[\AllowDynamicProperties]
 class Callwaiting implements BMO {
+	private $FreePBX;
+	private $db;
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
+			throw new \Exception("Not given a FreePBX Object");
 		}
 
 		$this->FreePBX = $freepbx;
@@ -63,7 +64,7 @@ class Callwaiting implements BMO {
 			$data = $this->FreePBX->Core->getDevice($defaultexten);
 			if(empty($data) || empty($data['description'])) {
 				$data = $this->FreePBX->Core->getUser($defaultexten);
-				$name = $data['name'];
+				$name = $data['name'] ?? ($data['username'] ?? ($_POST['username'] ?? ''));
 			} else {
 				$name = $data['description'];
 			}

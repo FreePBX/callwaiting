@@ -19,13 +19,13 @@ var CallwaitingC = UCPMC.extend({
 				sidebar = $(".widget-extra-menu[data-module='callwaiting'][data-widget_type_id='"+ext+"']:visible input[name='cwenable']"),
 				sstate = state ? "on" : "off";
 			if(widget.length && (widget.is(":checked") !== state)) {
-				self.stopPropagation[extension] = true;
+				self.stopPropagation[ext] = true;
 				widget.bootstrapToggle(sstate);
-				self.stopPropagation[extension] = false;
+				self.stopPropagation[ext] = false;
 			} else if(sidebar.length && (sidebar.is(":checked") !== state)) {
-				self.stopPropagation[extension] = true;
+				self.stopPropagation[ext] = true;
 				sidebar.bootstrapToggle(sstate);
-				self.stopPropagation[extension] = false;
+				self.stopPropagation[ext] = false;
 			}
 		});
 	},

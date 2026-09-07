@@ -32,7 +32,7 @@ class Callwaiting extends Base {
 		* @uri /callwaiting/users/:id
 		*/
 		$app->put('/users/{id}', function ($request, $response, $args) {
-			\FreePBX::Modules()->loadFunctionsInc('callforward');
+			\FreePBX::Modules()->loadFunctionsInc('callwaiting');
 			$params = $request->getParsedBody();
 			callwaiting_set($args['id'], $params['state']);
 			$response->getBody()->write(json_encode(true));

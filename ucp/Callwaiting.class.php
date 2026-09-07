@@ -24,9 +24,9 @@
  */
 namespace UCP\Modules;
 use \UCP\Modules as Modules;
-#[\AllowDynamicProperties]
 class Callwaiting extends Modules{
 	protected $module = 'Callwaiting';
+	private $Modules;
 	private $user = null;
 	private $userId = false;
 
@@ -131,6 +131,10 @@ class Callwaiting extends Modules{
 
 	public function getSimpleWidgetSettingsDisplay($id) {
 		return $this->getWidgetSettingsDisplay($id);
+	}
+
+	public function getWidgetSettingsDisplay($id) {
+		return $this->getWidgetDisplay($id);
 	}
 
 	/**
